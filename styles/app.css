@@ -124,6 +124,7 @@ a {
     background-color: #fff;
     border-radius: 2rem;
     cursor: pointer;
+    transition: all 100ms ease-in-out;
 }
 
 .navbar__btn-line {
@@ -133,6 +134,7 @@ a {
     height: 0.3rem;
     border-radius: 2.5rem;
     position: relative;
+    transition: all 200ms ease-in-out;
 }
 
 .navbar__btn-line:before,
@@ -143,6 +145,7 @@ a {
     width: 2.8rem;
     height: 0.3rem;
     border-radius: 2.5rem;
+    transition: all 200ms ease-in-out;
 }
 
 .navbar__btn-line:before {
@@ -151,4 +154,16 @@ a {
 
 .navbar__btn-line:after {
     top: 0.8rem;
+}
+
+.navbar__btn--open .navbar__btn-line {
+    background-color: transparent;
+}
+
+.navbar__btn--open .navbar__btn-line:before {
+    transform: translateY(0.8rem) rotate(45deg);
+}
+
+.navbar__btn--open .navbar__btn-line:after {
+    transform: translateY(-0.8rem) rotate(-45deg);
 }
