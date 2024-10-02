@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #E76F51;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -13,4 +17,138 @@ body {
     line-height: 1.6;
     font-size: 1.6rem;
     font-family: "roboto";
+}
+
+/*
+=============
+    Reset
+=============
+*/
+a {
+    text-decoration: none;
+}
+
+/*
+====================
+    Helper Class
+====================
+*/
+
+/*
+==================
+    App Styles
+==================
+*/
+.header {
+    background: linear-gradient( rgba(59,55,53,0.5), rgba(59,55,53,0.5)),url(../images/main-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.navbar__logo {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.navbar__img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__items {
+
+}
+
+.navbar__item {
+
+}
+
+.navbar__item--active {
+
+}
+
+.navbar__links {
+    display: none;
+}
+
+.navbar__link {
+
+}
+
+.navbar__link--border {
+
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-mobile__items {
+
+}
+
+.nav-mobile__item {
+
+}
+
+.nav-mobile__link {
+
+}
+
+.nav-mobile__links {
+
+}
+
+.nav-mobile__link {
+
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.navbar__btn-line {
+    display: block;
+    background-color: var(--primary-color);
+    width: 2.8rem;
+    height: 0.3rem;
+    border-radius: 2.5rem;
+    position: relative;
+}
+
+.navbar__btn-line:before,
+.navbar__btn-line:after {
+    content: ' ';
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 2.8rem;
+    height: 0.3rem;
+    border-radius: 2.5rem;
+}
+
+.navbar__btn-line:before {
+    top: -0.8rem;
+}
+
+.navbar__btn-line:after {
+    top: 0.8rem;
 }
