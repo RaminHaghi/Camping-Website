@@ -1,5 +1,6 @@
 :root {
     --primary-color: #E76F51;
+    --white: #ffffff;
 }
 
 html {
@@ -92,27 +93,44 @@ a {
 }
 
 .nav-mobile {
-    display: none;
+    position: fixed;
+    width: 25rem;
+    top: 0;
+    left: -25rem;
+    bottom: 0;
+    background-color: #3B3735;
+    padding: 2rem;
+    transition: all 250ms ease-in-out;
+}
+
+.nav-mobile--open {
+    left: 0;
 }
 
 .nav-mobile__items {
-
+    margin-bottom: 5rem;
 }
 
 .nav-mobile__item {
-
+    margin-bottom: 1rem;
 }
 
 .nav-mobile__link {
-
+    color: var(--white);
 }
 
-.nav-mobile__links {
-
+.nav-mobile__btns {
+    display: flex;
+    gap: 0.3rem;
 }
 
-.nav-mobile__link {
-
+.nav-mobile__btn {
+    padding: 0.6rem 1.5rem;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 0.3rem;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .navbar__btn {
@@ -121,10 +139,9 @@ a {
     align-items: center;
     width: 5.5rem;
     height: 5.5rem;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 2rem;
     cursor: pointer;
-    transition: all 100ms ease-in-out;
 }
 
 .navbar__btn-line {
@@ -134,7 +151,7 @@ a {
     height: 0.3rem;
     border-radius: 2.5rem;
     position: relative;
-    transition: all 200ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .navbar__btn-line:before,
@@ -145,7 +162,7 @@ a {
     width: 2.8rem;
     height: 0.3rem;
     border-radius: 2.5rem;
-    transition: all 200ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .navbar__btn-line:before {
