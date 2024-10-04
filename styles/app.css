@@ -50,6 +50,8 @@ a {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    border-bottom-right-radius: 13.5rem;
+    border-bottom-left-radius: 13.5rem;
 }
 
 .navbar {
@@ -270,7 +272,7 @@ a {
     font-family: "archivo";
     max-width: 33rem;
 }
-.header__paragraph {
+.header__caption {
     color: var(--white);
     margin-top: 3rem;
     max-width: 32rem;
