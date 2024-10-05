@@ -5,9 +5,12 @@
 }
 
 @media all and (min-width: 768px) {
-    .navbar__btn {
+
+    .navbar__btn,
+    .nav-mobile {
         display: none;
     }
+
     .navbar__menu {
         display: flex;
     }
@@ -17,30 +20,31 @@
     .navbar__links {
         display: flex;
     }
+
     .navbar__link {
         margin-left: 2rem;
     }
+
     .header__wrapper {
         margin-top: 15rem;
     }
+
     .header__title {
         font-size: 8rem;
         max-width: 56rem;
         line-height: 1.2;
     }
+
     .header__caption {
         max-width: 51rem;
         font-size: 1.8rem;
     }
+
     .header__btn {
         font-size: 1.8rem;
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) {}
 
-}
-
-@media all and (min-width: 1400px) {
-
-}
+@media all and (min-width: 1400px) {}
