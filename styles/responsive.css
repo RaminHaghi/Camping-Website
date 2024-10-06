@@ -17,6 +17,10 @@
 }
 
 @media all and (min-width: 992px) {
+    .header {
+        height: 100vh;
+    }
+
     .navbar__links {
         display: flex;
     }
@@ -26,7 +30,7 @@
     }
 
     .header__wrapper {
-        margin-top: 15rem;
+        margin-top: 14rem;
     }
 
     .header__title {
