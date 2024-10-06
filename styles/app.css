@@ -8,6 +8,7 @@
     --primary-font: "roboto", Arial, Helvetica, sans-serif;
     --primary-font-md: "roboto-medium", Arial, Helvetica, sans-serif;
     --secondary-font: "archivo", Tahoma, Verdana, sans-serif;
+    --radius-boxes: 1.7rem;
 }
 
 html {
@@ -35,6 +36,10 @@ body {
 */
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
 }
 
 /*
@@ -349,23 +354,23 @@ a {
 }
 
 /*
-====================
+===================
     Main Section
-====================
+===================
 */
 .main {
     margin-top: -8rem;
 }
 
-/* .services {
-
-} */
+.services {
+    margin-bottom: 15rem;
+}
 
 .service {
     background-color: var(--color-white);
     height: 31rem;
     text-align: center;
-    border-radius: 1.7rem;
+    border-radius: var(--radius-boxes);
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -374,7 +379,6 @@ a {
 }
 
 .service__img {
-    display: block;
     width: 9rem;
     height: 9rem;
 }
@@ -388,4 +392,96 @@ a {
 .service__caption {
     font-size: 1.6rem;
     max-width: 30rem;
+}
+
+/*
+==========================
+    Destination Section
+==========================
+*/
+.destination {
+    text-align: center;
+    color: var(--color-grey);
+}
+
+.direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.direction__img {
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3.5rem;
+}
+
+.direction__title {
+    font-family: var(--secondary-font);
+    font-size: 3.2rem;
+    line-height: 1.2;
+}
+
+/*
+==============
+    Places
+==============
+*/
+.places {
+    
+}
+
+.place {
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-boxes);
+    background-color: var(--color-white);
+    
+}
+
+.place__banner { 
+    position: relative;
+}
+
+.place__img {
+    max-width: 29rem;
+    height: 18rem;
+    border-radius: var(--radius-boxes);
+}
+
+.place__heart-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--color-white);
+    width: 4rem;
+    height: 4rem;
+    border-radius: var(--radius-boxes);
+}
+
+.place__price {
+    
+}
+
+.place__title {
+    
+}
+
+.place__caption {
+    
+}
+
+.place__btn {
+    
 }
