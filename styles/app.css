@@ -8,7 +8,7 @@
     --primary-font: "roboto", Arial, Helvetica, sans-serif;
     --primary-font-md: "roboto-medium", Arial, Helvetica, sans-serif;
     --secondary-font: "archivo", Tahoma, Verdana, sans-serif;
-    --radius-boxes: 1.7rem;
+    --radius-boxes: 1.5rem;
 }
 
 html {
@@ -52,6 +52,7 @@ img {
     justify-content: center;
     align-items: center;
     font-family: var(--primary-font-md);
+    font-size: 1.8rem;
     width: 20rem;
     height: 5rem;
     border-radius: 5rem;
@@ -425,6 +426,7 @@ img {
     font-family: var(--secondary-font);
     font-size: 3.2rem;
     line-height: 1.2;
+    max-width: 36rem;
 }
 
 /*
@@ -436,15 +438,21 @@ img {
     
 }
 
+.places__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .place {
-    height: 37rem;
+    height: 46rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: var(--radius-boxes);
     background-color: var(--color-white);
-    
+    margin-bottom: 2rem;  
 }
 
 .place__banner { 
@@ -452,7 +460,7 @@ img {
 }
 
 .place__img {
-    max-width: 29rem;
+    max-width: 28rem;
     height: 18rem;
     border-radius: var(--radius-boxes);
 }
@@ -471,17 +479,47 @@ img {
 }
 
 .place__price {
-    
+    position: absolute;
+    bottom: -2.5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: var(--primary-color);
+    background-color: var(--color-white);
+    width: 14rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--primary-font-md);
+    border-radius: var(--radius-boxes);
 }
 
 .place__title {
-    
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin: 4rem 0 1.2rem 0;
 }
 
 .place__caption {
-    
+    max-width: 30rem;
+    margin-bottom: 2.2rem;
 }
 
 .place__btn {
-    
+    color: #8D8D8D;
+    background-color: rgba(141, 141, 141, 0.12);
+    padding: 0.7rem 0;
 }
+
+.places__desktop {
+    display: block;
+}
+
+.destination__btn {
+    margin: 2.5rem auto 11rem auto;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
