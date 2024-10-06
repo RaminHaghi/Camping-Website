@@ -14,6 +14,23 @@
     .navbar__menu {
         display: flex;
     }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .service {
+        width: 32.5rem;
+        margin-right: 2rem;
+    }
+
+    .service__caption {
+        max-width: 28rem;
+    }
 }
 
 @media all and (min-width: 992px) {
@@ -47,8 +64,18 @@
     .header__btn {
         font-size: 1.8rem;
     }
+
+    .service {
+        width: 35.5rem;
+    }
 }
 
 @media all and (min-width: 1200px) {}
 
-@media all and (min-width: 1400px) {}
+@media all and (min-width: 1400px) {
+
+    .service {
+        width: 31.5rem;
+        height: 28rem;
+    }
+}

@@ -357,13 +357,12 @@ a {
     margin-top: -8rem;
 }
 
-.services {
+/* .services {
 
-}
+} */
 
 .service {
     background-color: var(--color-white);
-    /* width: 37rem; */
     height: 31rem;
     text-align: center;
     border-radius: 1.7rem;
