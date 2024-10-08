@@ -1,9 +1,3 @@
-@media all and (max-width: 330px) {
-    .place__img {
-        width: 23rem;
-    }
-}
-
 @media all and (min-width: 576px) {
     .header__caption {
         max-width: 37rem;
@@ -23,6 +17,19 @@
 
     .services {
         margin: 0 -2rem 15rem auto;
+    }
+
+    .newsletter {
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .newsletter__title {
+        max-width: 100%;
+    }
+
+    .newsletter__caption {
+        margin: 0 0 2rem 0;
     }
 
 }
@@ -58,10 +65,43 @@
     .header__btn {
         font-size: 1.8rem;
     }
+
+    .service {
+        width: 32rem;
+    }
+
+    .place {
+        width: 32rem;
+    }
+
+    .newsletter {
+        padding: 0 4rem;
+        height: 40rem;
+    }
+
+    .email-section__form {
+        width: 45rem;
+    }
 }
 
 @media all and (min-width: 1200px) {}
 
 @media all and (min-width: 1400px) {
+    .newsletter {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10rem;
+    }
 
+    .newsletter__caption {
+        max-width: 50rem;
+    }
+
+    .email-section__form {
+        width: 61rem;
+    }
+
+    .newsletter__banner {
+        width: 75rem;
+    }
 }
