@@ -1,3 +1,9 @@
+@media all and (max-width: 330px) {
+    .place__img {
+        width: 23rem;
+    }
+}
+
 @media all and (min-width: 576px) {
     .header__caption {
         max-width: 37rem;
@@ -19,21 +25,6 @@
         margin: 0 -2rem 15rem auto;
     }
 
-    .service {
-        width: 32.5rem;
-    }
-
-    .service__caption {
-        max-width: 28rem;
-    }
-
-    .place {
-        width: 32.5rem;
-    }
-
-    .place__img {
-        width: 28rem;
-    }
 }
 
 @media all and (min-width: 992px) {
@@ -73,12 +64,4 @@
 
 @media all and (min-width: 1400px) {
 
-    .service {
-        width: 31.5rem;
-        height: 28rem;
-    }
-
-    .place {
-        width: 31.5rem;
-    }
 }
