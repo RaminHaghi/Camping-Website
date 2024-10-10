@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    line-height: 1.6;
+    line-height: 2;
     font-size: 1.6rem;
     background-color: #FAF4F2;
     font-family: var(--primary-font);
@@ -37,10 +37,6 @@ body {
 */
 a {
     text-decoration: none;
-}
-
-img {
-    display: block;
 }
 
 /*
@@ -64,14 +60,6 @@ img {
     transition: all 250ms ease-in-out;
 }
 
-.title-styles {
-    font-family: var(--secondary-font);
-    font-size: 1.8rem;
-}
-
-.links-color {
-    color: var(--color-grey);
-}
 /*
 /////////////////
     Scroll Bar
@@ -412,7 +400,7 @@ img {
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
-    padding: 3rem 2rem;
+    padding: 3rem 2.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -423,9 +411,12 @@ img {
 .service__img {
     width: 9rem;
     height: 9rem;
+    display: block;
 }
 
 .service__title {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
     margin: 2.4rem 0 1.7rem 0;
 }
 
@@ -488,7 +479,7 @@ img {
     height: 44rem;
     border-radius: var(--radius-boxes);
     background-color: var(--color-white);
-    padding: 3rem 2rem;
+    padding: 3rem 2.1rem;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
@@ -506,6 +497,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .place__like {
@@ -540,6 +532,8 @@ img {
 }
 
 .place__title {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
     margin: 4rem 0 1.2rem 0;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -591,31 +585,37 @@ img {
     background-color: var(--secondary-color);
     border-radius: var(--radius-boxes);
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 3rem 5rem;
     color: var(--color-grey);
     margin-bottom: 14rem;
 }
 
-.newsletter__content {
+.newsletter-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.newsletter__title {
+.newsletter-content__title {
     font-family: var(--secondary-font);
     font-size: 3.2rem;
     line-height: 1.2;
     max-width: 20rem;
-    margin: 5rem auto 1.5rem auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
-.newsletter__caption {
+.newsletter-content__description {
     font-family: var(--primary-font-md);
-    max-width: 40rem;
-    margin: 0 auto 2rem auto;
+    max-width: 30rem;
+    margin-bottom: 2rem;
 }
 
 .email-section {
     display: flex;
+    width: 100%;
 }
 
 .email-section__form {
@@ -660,11 +660,11 @@ img {
 
 .newsletter__banner {
     width: 100%;
-    margin: 0 auto;
 }
 
 .newsletter__img {
     width: 100%;
+    height: 100%;
 }
 
 /*
