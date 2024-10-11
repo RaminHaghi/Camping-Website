@@ -27,6 +27,11 @@
     .email-section__form {
         width: 100%;
     }
+    
+    .footer-scroll {
+        right: 1.5rem;
+        left: auto;
+    }
 
 }
 
@@ -82,6 +87,7 @@
         text-align: start;
         width: 50rem;
     }
+
     .newsletter-content__title {
         margin-top: 0;
     }
@@ -91,16 +97,47 @@
         height: 35rem;
     }
 
+    .footer__title {
+        max-width: 28rem;
+    }
 }
 
-@media all and (min-width: 1200px) {}
+@media all and (min-width: 1200px) {
+    .footer-wrapper {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .footer-wrapper__left {
+        max-width: 50rem;
+    }
+
+    .footer-wrapper__right {
+        flex-wrap: nowrap;
+    }
+
+    .footer__service {
+        width: 22rem;
+    }
+}
+
 
 @media all and (min-width: 1400px) {
     .newsletter {
         justify-content: space-between;
         align-items: center;
     }
+
     .newsletter-content {
         width: 61rem;
     }
+
+    .footer-wrapper {
+        justify-content: space-between;
+    }
+
+    .footer__title {
+        max-width: 50rem;
+    }
+    
 }
