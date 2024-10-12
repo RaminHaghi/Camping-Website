@@ -2,6 +2,11 @@
     .header__caption {
         max-width: 37rem;
     }
+
+    .newsletter::before {
+        top: 0;
+        left: -48rem
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -31,6 +36,10 @@
     .footer-scroll {
         right: 1.5rem;
         left: auto;
+    }
+
+    .newsletter::before {
+        left: -30rem;
     }
 
 }
@@ -100,6 +109,10 @@
     .footer__title {
         max-width: 28rem;
     }
+    .newsletter::before {
+        top: -35rem;
+        left: -11rem;
+    }
 }
 
 @media all and (min-width: 1200px) {
@@ -138,6 +151,11 @@
 
     .footer__title {
         max-width: 50rem;
+    }
+
+    .newsletter::before {
+        top: -33rem;
+        left: -19rem;
     }
     
 }
