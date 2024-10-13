@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media all and (min-width: 576px) {
     .header__caption {
         max-width: 37rem;
@@ -17,6 +24,8 @@
     }
 
     .navbar__menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -50,6 +59,8 @@
     }
 
     .navbar__links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -86,13 +97,20 @@
 
     .newsletter {
         height: 40rem;
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 2rem;
     }
 
     .newsletter-content {
-        align-items: start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
         text-align: start;
         width: 50rem;
     }
@@ -117,7 +135,10 @@
 
 @media all and (min-width: 1200px) {
     .footer-wrapper {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         gap: 2rem;
     }
 
@@ -126,7 +147,8 @@
     }
 
     .footer-wrapper__right {
-        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     }
 
     .footer__service {
@@ -137,8 +159,12 @@
 
 @media all and (min-width: 1400px) {
     .newsletter {
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .newsletter-content {
@@ -146,7 +172,9 @@
     }
 
     .footer-wrapper {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .footer__title {
