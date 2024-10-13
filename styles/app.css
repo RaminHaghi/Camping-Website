@@ -16,6 +16,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,
@@ -29,7 +30,9 @@ body {
     font-size: 1.6rem;
     background-color: #FAF4F2;
     font-family: var(--primary-font);
+    overflow-x: hidden;
 }
+
 
 /*
 /////////////
@@ -435,6 +438,30 @@ a {
 .destination {
     text-align: center;
     color: var(--color-grey);
+    position: relative;
+}
+
+.destination::before,
+.destination::after {
+    position: absolute;
+    content: '';
+    width: 100rem;
+    height: 100rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.destination::before {
+    background-image: url('../images/svgs/Shape1.svg');
+    top: -40rem;
+    right: -56rem;
+}
+
+.destination::after {
+    background-image: url('../images/svgs/Shape2.svg');
+    bottom: 40rem;
+    left: -68rem;
 }
 
 .direction {
@@ -694,6 +721,7 @@ a {
     background-color: var(--secondary-color);
     border-top-right-radius: 11rem;
     border-top-left-radius: 11rem;
+    position: relative;
 }
 
 .footer>.container {
