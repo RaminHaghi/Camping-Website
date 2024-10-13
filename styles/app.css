@@ -5,6 +5,84 @@
 * Browsers: last 4 version
 */
 
+/*
+=========
+Font Face  
+=========
+*/
+@font-face {
+    font-family: "archivo";
+    src: url(../fonts/Archivo/Archivo-Black.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf) format(truetype);
+}
+
+/*
+========================
+    Rest Agent Styles
+========================
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+
 :root {
     /*
     Variables
@@ -40,16 +118,6 @@ body {
     background-color: #FAF4F2;
     font-family: var(--primary-font);
     overflow-x: hidden;
-}
-
-
-/*
-/////////////
-    Reset
-/////////////
-*/
-a {
-    text-decoration: none;
 }
 
 /*
@@ -109,11 +177,19 @@ a {
     App Styles
 //////////////////
 */
+.container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
 
 /*
-=====================
-    Header Section
-=====================
+==============
+Header Section
+============== 
 */
 .btn:hover {
     letter-spacing: 0.1rem;
@@ -169,9 +245,9 @@ a {
 }
 
 /*
-==============================
-    Main Menu (desktop menu)
-==============================
+========================
+Main Menu (desktop menu)
+========================
 */
 .navbar__menu {
     display: none;
@@ -261,9 +337,9 @@ a {
 }
 
 /*
-==================
-    Mobile Menu
-==================
+===========
+Mobile Menu
+===========
 */
 .nav-mobile {
     position: fixed;
@@ -339,9 +415,9 @@ a {
 }
 
 /*
-======================
-    Hamburger Menu
-======================
+==============
+Hamburger Menu
+==============
 */
 .navbar__btn {
     display: -webkit-box;
@@ -410,9 +486,9 @@ a {
 }
 
 /*
-=======================
-    Header Contents
-=======================
+===============
+Header Contents
+===============
 */
 .header__wrapper {
     display: -webkit-box;
@@ -452,9 +528,9 @@ a {
 }
 
 /*
-===================
-    Main Section
-===================
+============
+Main Section
+============
 */
 .main {
     margin-top: -8rem;
@@ -521,9 +597,9 @@ a {
 }
 
 /*
-==========================
-    Destination Section
-==========================
+===================
+Destination Section
+===================
 */
 .destination {
     text-align: center;
@@ -587,9 +663,9 @@ a {
 }
 
 /*
-==============
-    Places
-==============
+======
+Places
+======
 */
 .places {
     display: -webkit-box;
@@ -727,9 +803,9 @@ a {
 }
 
 /*
-==================
-    newsletter
-==================
+==========
+newsletter
+==========
 */
 .newsletter {
     display: -webkit-box;
@@ -867,9 +943,9 @@ a {
 }
 
 /*
-==============
-    Footer
-==============
+=======
+Footer
+=======
 */
 .footer {
     background-color: var(--secondary-color);
@@ -967,4 +1043,211 @@ a {
 
 .footer__copyright {
     text-align: center;
+}
+
+/*
+==================
+Responcive Project
+==================
+*/
+@media all and (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+
+    .header__caption {
+        max-width: 37rem;
+    }
+
+    .newsletter::before {
+        top: 0;
+        left: -48rem
+    }
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    .navbar__btn,
+    .nav-mobile {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .newsletter-content__title {
+        font-size: 4rem;
+        max-width: 100%;
+    }
+
+    .newsletter-content__description {
+        max-width: 48rem;
+    }
+
+    .email-section__form {
+        width: 100%;
+    }
+    
+    .footer-scroll {
+        right: 1.5rem;
+        left: auto;
+    }
+
+    .newsletter::before {
+        left: -30rem;
+    }
+
+}
+
+@media all and (min-width: 992px) {
+    .container {
+        width: 920px;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+    .navbar__links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .navbar__link {
+        margin-left: 2rem;
+    }
+
+    .header__wrapper {
+        margin-top: 14rem;
+    }
+
+    .header__title {
+        font-size: 8rem;
+        max-width: 56rem;
+        line-height: 1.2;
+    }
+
+    .header__caption {
+        max-width: 51rem;
+        font-size: 1.8rem;
+    }
+
+    .header__btn {
+        font-size: 1.8rem;
+    }
+
+    .service {
+        width: 32rem;
+    }
+
+    .place {
+        width: 32rem;
+    }
+
+    .newsletter {
+        height: 40rem;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .newsletter-content {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        text-align: start;
+        width: 50rem;
+    }
+
+    .newsletter-content__title {
+        margin-top: 0;
+    }
+
+    .newsletter__banner {
+        width: 46rem;
+        height: 35rem;
+    }
+
+    .footer__title {
+        max-width: 28rem;
+    }
+    .newsletter::before {
+        top: -35rem;
+        left: -11rem;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+
+    .footer-wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        gap: 2rem;
+    }
+
+    .footer-wrapper__left {
+        max-width: 50rem;
+    }
+
+    .footer-wrapper__right {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+
+    .footer__service {
+        width: 22rem;
+    }
+}
+
+
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
+
+    .newsletter {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .newsletter-content {
+        width: 61rem;
+    }
+
+    .footer-wrapper {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .footer__title {
+        max-width: 50rem;
+    }
+
+    .newsletter::before {
+        top: -33rem;
+        left: -19rem;
+    }
+    
 }
